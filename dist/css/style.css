@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: rgba(227, 249, 254, 0.605);
+  padding: 0 6rem;
+  gap: 3rem;
+}
+.header .logo {
+  height: 5rem;
+}
+.header .main-nav-list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+.header .main-nav-link {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(36, 35, 35);
+  font-size: 2rem;
+  font-weight: 530;
+}
+.header .main-nav-link:hover {
+  background-color: rgb(140, 199, 235);
+}
+
+/*# sourceMappingURL=style.css.map */
