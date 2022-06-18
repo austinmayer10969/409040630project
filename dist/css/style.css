@@ -20,6 +20,17 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 3.2rem;
+  -webkit-column-gap: 6.4rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.heading-primary {
+  text-align: center;
+  text-transform: uppercase;
+  color: #242323;
+  font-size: 4rem;
+  padding-bottom: 5rem;
 }
 
 .header {
@@ -77,6 +88,40 @@ body {
 
 .icon-mobile-nav[name=close-sharp] {
   display: none;
+}
+
+div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.section-about {
+  background-color: rgba(246, 205, 181, 0.23);
+}
+
+.section-about .about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 3rem;
+  max-width: 130rem;
+  margin: auto;
+}
+
+.section-about .about-description {
+  font-size: 1.7rem;
+  padding-top: 1.5rem;
+}
+
+.section-about .about-img {
+  width: 100%;
 }
 
 @media (max-width: 900px) {
