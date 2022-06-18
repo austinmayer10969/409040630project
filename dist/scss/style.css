@@ -30,7 +30,7 @@ body {
   text-transform: uppercase;
   color: #242323;
   font-size: 4rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .header {
@@ -113,6 +113,7 @@ div img {
   padding-top: 3rem;
   max-width: 130rem;
   margin: auto;
+  padding-bottom: 5rem;
 }
 
 .section-about .about-description {
