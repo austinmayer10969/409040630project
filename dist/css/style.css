@@ -90,6 +90,19 @@ body {
   display: none;
 }
 
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
 div img {
   width: 100%;
   height: 100%;
@@ -189,6 +202,21 @@ div img {
   font-size: 1.5rem;
 }
 
+.section-link {
+  background-color: rgba(36, 35, 35, 0.7);
+}
+.section-link .link {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  padding-left: 15rem;
+}
+.section-link .link .img {
+  width: 5rem;
+  border-radius: 50%;
+}
+
 @media (max-width: 900px) {
   .header .btn-mobile-nav {
     display: block;
@@ -232,6 +260,47 @@ div img {
   }
   .header.nav-open .icon-mobile-nav[name=grid] {
     display: none;
+  }
+  .section-about .about {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 0.5rem;
+  }
+  .section-about .about-text-box, .section-about .about-image-box {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .section-profile .profile {
+    grid-template-columns: 1fr;
+  }
+  .section-profile .profile-text-box {
+    text-align: center;
+  }
+  .section-gallery {
+    grid-template-columns: 1fr;
+  }
+  .section-gallery .gallery {
+    padding: 3rem;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .section-gallery {
+    grid-template-columns: 1fr;
+  }
+  .section-gallery .gallery {
+    grid-template-columns: 1fr;
+  }
+  .section-music {
+    grid-template-columns: 1fr;
+    align-items: center;
+    left: 0;
+  }
+  .section-music .music {
+    grid-template-columns: 1fr;
+    align-items: center;
+    left: 0;
   }
 }
 
