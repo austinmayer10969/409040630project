@@ -284,6 +284,12 @@ div img {
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
   }
+  .section-music {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .section-link {
+    align-items: center;
+  }
 }
 @media (max-width: 500px) {
   .section-gallery {
@@ -301,6 +307,9 @@ div img {
     grid-template-columns: 1fr;
     align-items: center;
     left: 0;
+  }
+  .section-link .link .img {
+    align-items: center;
   }
 }
 
