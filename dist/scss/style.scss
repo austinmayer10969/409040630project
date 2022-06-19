@@ -36,6 +36,13 @@
     padding-top: 2.5rem;
   }
 
+  .heading-tertiary {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
@@ -134,6 +141,73 @@
         font-size: 1.7rem;
         padding-top: 1rem;
         color: rgb(36, 35, 35);
+      }
+    }
+  }
+
+  .section-gallery {
+    display: grid;
+    grid-template-columns: 30fr 70fr;
+    background-color: rgba(246, 205, 181, 0.23);
+    align-items: center;
+
+    .text-box {
+      
+      &-description {
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 2rem;
+      }
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.7rem;
+      padding: 1.3rem;
+
+      &-item {
+        overflow: hidden;
+
+        img {
+          display: block;
+          width: 100%;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  .section-music {
+    padding: 10rem;
+    background-color: rgba(159, 159, 159, 0.555);
+
+    .music {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+      padding: 2rem;
+      gap: 9rem;
+      
+
+      &-card {
+        background-color: rgba(227, 249, 254, 0.605);
+        padding: 3rem;
+        padding-bottom: 15rem;
+        border: solid rgb(36, 35, 35);
+
+        img {
+          width: 100%;
+        }
+
+        .song {
+          text-align: center;
+          padding: 1rem;
+          font-size: 1.5rem;
+        }
       }
     }
   }
